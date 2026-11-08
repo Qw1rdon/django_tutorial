@@ -14,7 +14,7 @@
             <td>{{ question.pub_date|date:"d.m.Y" }}</td>
             <td><span class="badge bg-secondary">{{ question.total_votes|default:0 }}</span></td>
             <td class="text-end">
-                <a href="{% url 'detail' question.id%}" class="btn btn-primary btn-sm">Голосовать</a>
+                <a href="{% url 'detail' question.id %}" class="btn btn-primary btn-sm">Голосовать</a>
             </td>
         </tr>
         {% empty %}
